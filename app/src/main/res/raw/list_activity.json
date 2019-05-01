@@ -1,0 +1,97 @@
+[
+  {
+    "time": "05:00",
+    "desc": "Bangun pagi",
+    "location": "Rumah"
+  },
+  {
+    "time": "05:10",
+    "desc": "Shalat shubuh",
+    "location": "Rumah"
+  },
+  {
+    "time": "05:15",
+    "desc": "Tidur sejenak",
+    "location": "Rumah"
+  },
+  {
+    "time": "07:30",
+    "desc": "Bangun lagi",
+    "location": "Rumah"
+  },
+  {
+    "time": "07:40",
+    "desc": "Mandi pagi",
+    "location": "Rumah"
+  },
+  {
+    "time": "08:00",
+    "desc": "Berangkat ke kantor",
+    "location": "Rumah"
+  },
+  {
+    "time": "08:20",
+    "desc": "Sampai di kantor",
+    "location": "Kantor"
+  },
+  {
+    "time": "08:25",
+    "desc": "Sarapan",
+    "location": "Kantor"
+  },
+  {
+    "time": "08:45",
+    "desc": "Mulai kerja",
+    "location": "Kantor"
+  },
+  {
+    "time": "11:45",
+    "desc": "Istirahat, shalat dhuhur, makan siang",
+    "location": "Kantor"
+  },
+  {
+    "time": "01:00",
+    "desc": "Kerja kembali",
+    "location": "Kantor"
+  },
+  {
+    "time": "15:25",
+    "desc": "Shalat ashar",
+    "location": "Kantor"
+  },
+  {
+    "time": "17:25",
+    "desc": "Beres-beres meja kantor",
+    "location": "Kantor"
+  },
+  {
+    "time": "17:30",
+    "desc": "Berangkat kuliah",
+    "location": "Kantor"
+  },
+  {
+    "time": "17:45",
+    "desc": "Sampai di kampus",
+    "location": "UNIKOM"
+  },
+  {
+    "time": "17:45",
+    "desc": "Mulai kuliah",
+    "location": "UNIKOM"
+  },
+  {
+    "time": "21:00",
+    "desc": "Selesai kuliah",
+    "location": "UNIKOM"
+  },
+  {
+    "time": "21:10",
+    "desc": "Pulang ke rumah",
+    "location": "UNIKOM"
+  },
+  {
+    "time": "21:35",
+    "desc": "Sampai di rumah",
+    "location": "Rumah"
+  }
+]

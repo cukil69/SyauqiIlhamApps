@@ -1,0 +1,33 @@
+{
+  "image": "ic_me",
+  "name": "Syauqi Ilham Alfaraci",
+  "email": "syauqiilham28@gmail.com",
+  "hobbies": [
+    {
+      "image": "ic_hobi_1",
+      "name": "Main game"
+    },
+    {
+      "image": "ic_hobi_2",
+      "name": "Main musik"
+    },
+    {
+      "image": "ic_hobi_3",
+      "name": "Naik gunung"
+    },
+    {
+      "image": "ic_hobi_4",
+      "name": "Travelling"
+    }
+  ],
+  "portofolio": [
+    {
+      "image": "ic_porto_1",
+      "name": "Gaming"
+    },
+    {
+      "image": "ic_porto_2",
+      "name": "Gaming"
+    }
+  ]
+}

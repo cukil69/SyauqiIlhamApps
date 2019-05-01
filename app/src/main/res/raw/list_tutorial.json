@@ -1,0 +1,17 @@
+[
+  {
+    "image": "ic_hello",
+    "title_text": "Hello!",
+    "desc_text": "Nama saya Syauqi Ilham Alfaraci.\nSelamat datang di aplikasi saya"
+  },
+  {
+    "image": "ic_welcome",
+    "title_text": "Selamat datang!",
+    "desc_text": "Disini anda akan mengenal lebih dalam tentang kehidupan saya.\nMulai dari profil saya, kehidupan sehari-hari saya, sampai foto dan video saya"
+  },
+  {
+    "image": "ic_handshake",
+    "title_text": "Enjoy!",
+    "desc_text": "Selamat menggunakan aplikasi ini dan berkenalan dengan saya!"
+  }
+]

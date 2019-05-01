@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.TutorialActivity">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpgTutorialViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/pivTutorialIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnTutorialGetStarted"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vpgTutorialViewPager"
+            app:piv_animationType="scale"
+            app:piv_dynamicCount="true"
+            app:piv_interactiveAnimation="true"
+            app:piv_radius="4dp"
+            app:piv_selectedColor="@color/colorPrimary"
+            app:piv_unselectedColor="@color/colorGrey"
+            app:piv_viewPager="@id/vpgTutorialViewPager" />
+
+        <Button
+            android:id="@+id/btnTutorialGetStarted"
+            style="@style/Button.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="Get started"
+            app:layout_constraintBottom_toBottomOf="@+id/vpgTutorialViewPager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
