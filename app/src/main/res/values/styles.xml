@@ -16,10 +16,11 @@
     </style>
 
     <style name="ToolbarPrimary" parent="Theme.AppCompat">
+        <item name="android:background">@color/colorPrimary</item>
         <item name="android:fontFamily">@font/varelaround_regular</item>
-        <item name="android:textColorPrimary">@color/colorPrimary</item>
-        <item name="android:textColorSecondary">@color/colorPrimary</item>
-        <item name="actionMenuTextColor">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:textColorSecondary">#fff</item>
+        <item name="actionMenuTextColor">#fff</item>
     </style>
 
     <style name="ToolbarTextAppereance">

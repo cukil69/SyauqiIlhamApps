@@ -51,6 +51,7 @@ public class HomeFragment extends Fragment {
         binding.txtHomeJmlPorto.setText(item.getPorto().size() + "");
         binding.txtHomeJmlHobi.setText(item.getHobbies().size() + "");
         binding.txtHomeName.setText(item.getName());
+        binding.txtHomeBio.setText(item.getBio());
         binding.txtHomeEmail.setText(item.getEmail());
         binding.rclHomeListHobi.setAdapter(hobiAdapter);
         binding.rclHomeListHobi.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));

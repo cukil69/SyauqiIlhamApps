@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgMusicAlbum"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_me"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgMusicPlaying"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imgMusicAlbum"
+            app:layout_constraintEnd_toEndOf="@+id/imgMusicAlbum"
+            app:layout_constraintStart_toStartOf="@+id/imgMusicAlbum"
+            app:layout_constraintTop_toTopOf="@+id/imgMusicAlbum"
+            app:srcCompat="@drawable/ic_music_play" />
+
+        <TextView
+            android:id="@+id/txtMusicName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/varelaround_regular"
+            android:text="Syauqi Ilham"
+            android:textColor="#383838"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txtMusicDuration"
+            app:layout_constraintStart_toEndOf="@+id/imgMusicAlbum"
+            app:layout_constraintTop_toTopOf="@+id/imgMusicAlbum" />
+
+        <TextView
+            android:id="@+id/txtMusicAlbum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/varelaround_regular"
+            android:text="08xxxxxx"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgMusicAlbum"
+            app:layout_constraintEnd_toEndOf="@+id/txtMusicName"
+            app:layout_constraintStart_toStartOf="@+id/txtMusicName"
+            app:layout_constraintTop_toBottomOf="@+id/txtMusicName"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txtMusicDuration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/varelaround_regular"
+            android:text="03:10"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtMusicName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtMusicName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -5,5 +5,6 @@
     <color name="colorSecondary">#2E6EDA</color>
     <color name="colorAccent">#FFC107</color>
     <color name="colorAccentDark">#DAA506</color>
+    <color name="colorAccentSemi">#80FFC107</color>
     <color name="colorGrey">#ccc</color>
 </resources>

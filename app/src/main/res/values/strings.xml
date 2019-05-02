@@ -5,7 +5,10 @@
     <string name="title_daily_activity">Aktivitas Harian</string>
     <string name="title_friend_list">Daftar Teman</string>
     <string name="title_gallery">Gallery</string>
-    <string name="title_music">Favorite Music &amp; Video</string>
+    <string name="title_music_video">Favorite Music &amp; Video</string>
+    <string name="title_music">Music</string>
+    <string name="title_video">Video</string>
     <string name="title_profile">Profile</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

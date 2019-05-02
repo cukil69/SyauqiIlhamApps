@@ -170,10 +170,13 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/txtHomeBio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
+                    android:ellipsize="end"
                     android:fontFamily="@font/varelaround_regular"
+                    android:maxLines="3"
                     android:text="Lorem impsum dolor sit amet slasd asdlasd asdlasda s"
                     android:textColor="#383838"
                     android:textSize="13sp" />

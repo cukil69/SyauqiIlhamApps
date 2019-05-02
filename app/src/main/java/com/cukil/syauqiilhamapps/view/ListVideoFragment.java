@@ -7,14 +7,15 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.cukil.syauqiilhamapps.R;
-import com.cukil.syauqiilhamapps.adapter.GalleryAdapter;
-import com.cukil.syauqiilhamapps.databinding.FragmentGalleryBinding;
-import com.cukil.syauqiilhamapps.model.Foto;
+import com.cukil.syauqiilhamapps.adapter.ListVideoAdapter;
+import com.cukil.syauqiilhamapps.databinding.FragmentListVideoBinding;
+import com.cukil.syauqiilhamapps.model.Video;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -31,27 +32,26 @@ import java.util.List;
     Tanggal buat : 01-05-2019
  */
 
-public class GalleryFragment extends Fragment {
+public class ListVideoFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentListVideoBinding binding;
 
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = FragmentGalleryBinding.inflate(inflater);
-        ((AppCompatActivity) getActivity()).setSupportActionBar(binding.toolbar);
+        binding = FragmentListVideoBinding.inflate(inflater);
         return binding.getRoot();
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Reader jsonReader = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.list_foto)));
-        List<Foto> list = new Gson().fromJson(jsonReader, new TypeToken<ArrayList<Foto>>() {
+        Reader jsonReader = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.list_video)));
+        List<Video> list = new Gson().fromJson(jsonReader, new TypeToken<ArrayList<Video>>() {
         }.getType());
-        GalleryAdapter galleryAdapter = new GalleryAdapter(list);
-        binding.rclGalleryListFoto.setAdapter(galleryAdapter);
-        binding.rclGalleryListFoto.setLayoutManager(new GridLayoutManager(getContext(), 3));
+        ListVideoAdapter listVideoAdapter = new ListVideoAdapter(list);
+        binding.rclVideoListVideo.setAdapter(listVideoAdapter);
+        binding.rclVideoListVideo.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 }

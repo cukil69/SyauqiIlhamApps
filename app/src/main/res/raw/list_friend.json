@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Gemilang Sekar Hapsari",
+    "image": "https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/42200817_1863000213753756_1696411691354423296_o.jpg?_nc_cat=111&_nc_ht=scontent-sin6-1.xx&oh=d6e7ebbcb1176a291661920afaeae3fb&oe=5D742CFA",
+    "phone": "08xxxxxxxx",
+    "address": "Yogyakarta"
+  },
+  {
+    "name": "M. Rezon Maulana",
+    "image": "https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/10268697_759747977370378_5870381400330044552_n.jpg?_nc_cat=110&_nc_ht=scontent-sin6-1.xx&oh=d6f42f0c6745401ba5526678de9d0a15&oe=5D642243",
+    "phone": "08xxxxxxxx",
+    "address": "Bandung"
+  },
+  {
+    "name": "Harish Sabar",
+    "image": "https://scontent-sin6-1.xx.fbcdn.net/v/t31.0-1/c379.0.1290.1290a/10506738_10150004552801856_220367501106153455_o.jpg?_nc_cat=1&_nc_ht=scontent-sin6-1.xx&oh=355904c3dd9131a17146ca3197aa6072&oe=5D385C49",
+    "phone": "08xxxxxxxx",
+    "address": "Cimahi"
+  },
+  {
+    "name": "Irfan Andriansyah",
+    "image": "https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/10153960_463489373783023_3298433774033628514_n.jpg?_nc_cat=111&_nc_ht=scontent-sin6-1.xx&oh=85db8415c42e7d19b7f66a94aecf2716&oe=5D61E409",
+    "phone": "08xxxxxxxx",
+    "address": "Padalarang"
+  },
+  {
+    "name": "Agung Permana Putra",
+    "image": "https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/10891842_801501333231504_8436981796069584960_n.jpg?_nc_cat=101&_nc_ht=scontent-sin6-1.xx&oh=1fcc31c2a3a7d5b444471d83f9ef45c2&oe=5D775E28",
+    "phone": "08xxxxxxxx",
+    "address": "Bandung"
+  },
+  {
+    "name": "M. Farhan Fauzan",
+    "image": "https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/49211039_2443976325644361_4921058246539608064_n.jpg?_nc_cat=107&_nc_ht=scontent-sin6-1.xx&oh=4d8776db13808152471e5ec10934ab53&oe=5D657BB2",
+    "phone": "08xxxxxxxx",
+    "address": "Cimahi"
+  }
+]

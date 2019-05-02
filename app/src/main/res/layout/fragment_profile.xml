@@ -4,101 +4,65 @@
 
     <data></data>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.google.android.material.appbar.AppBarLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent">
+            android:orientation="vertical">
 
-            <com.google.android.material.appbar.CollapsingToolbarLayout
-                android:id="@+id/collapseToolbar"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fitsSystemWindows="true"
-                android:paddingLeft="0dp"
-                android:paddingRight="0dp"
-                app:collapsedTitleTextAppearance="@style/TextNameCollapsed"
-                app:contentScrim="#fff"
-                app:expandedTitleTextAppearance="@style/TextName"
-                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-                app:scrimAnimationDuration="300"
-                app:titleEnabled="true">
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax">
 
-                <RelativeLayout
+                <ImageView
                     android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginBottom="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_profile_header" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfileProfile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ic_me"
+                    android:tint="@color/colorGrey"
+                    app:civ_border_color="#fff"
+                    app:civ_border_width="2dp"
+                    app:civ_circle_background_color="@color/colorGrey"
+                    app:finalHeight="32dp"
+                    app:finalToolbarHeight="?attr/actionBarSize"
+                    app:finalXPosition="8dp"
+                    app:finalYPosition="12dp" />
+
+                <TextView
+                    android:id="@+id/txtProfileName"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_collapseMode="parallax">
+                    android:layout_below="@id/imgProfileProfile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/varelaround_regular"
+                    android:text="Syauqi Ilham Alfaraci"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:scaleType="center"
-                        android:src="@drawable/ic_profile_header" />
+                <Button
+                    style="@style/Button.Accent"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="About app" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/imgHomeProfile"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="32dp"
-                        android:src="@drawable/ic_me"
-                        android:tint="@color/colorGrey"
-                        app:civ_border_color="#fff"
-                        app:civ_border_width="2dp"
-                        app:civ_circle_background_color="@color/colorGrey"
-                        app:finalHeight="32dp"
-                        app:finalToolbarHeight="?attr/actionBarSize"
-                        app:finalXPosition="8dp"
-                        app:finalYPosition="12dp" />
-
-                    <TextView
-                        android:id="@+id/txtHomeName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/imgHomeProfile"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="8dp"
-                        android:fontFamily="@font/varelaround_regular"
-                        android:text="Syauqi Ilham"
-                        android:textColor="#fff"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/txtHomeEmail"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/txtHomeName"
-                        android:layout_centerHorizontal="true"
-                        android:fontFamily="@font/varelaround_regular"
-                        android:text="syauqiilham28@gmail.com"
-                        android:textColor="#fff"
-                        android:textSize="14sp" />
-
-                </RelativeLayout>
-
-                <androidx.appcompat.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    android:layout_gravity="top"
-                    android:theme="@style/ToolbarPrimary"
-                    app:layout_anchor="@id/collapseToolbar"
-                    app:layout_collapseMode="pin"
-                    app:title="Home" />
-
-            </com.google.android.material.appbar.CollapsingToolbarLayout>
-
-        </com.google.android.material.appbar.AppBarLayout>
-
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -125,64 +89,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:fontFamily="@font/varelaround_regular"
-                    android:text="Lorem impsum dolor sit amet slasd asdlasd asdlasda s"
-                    android:textColor="#383838"
-                    android:textSize="13sp" />
-
-                <Button
-                    style="@style/Button.Accent"
-                    android:layout_width="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="16dp"
-                    android:text="Lihat profil penuh" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginBottom="16dp"
-                    android:alpha="0.3"
-                    android:background="@color/colorGrey" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:fontFamily="@font/varelaround_regular"
-                    android:text="Hobi"
-                    android:textAllCaps="true"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rclHomeListHobi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginBottom="16dp"
-                    android:alpha="0.3"
-                    android:background="@color/colorGrey" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:fontFamily="@font/varelaround_regular"
-                    android:text="Portofolio"
-                    android:textAllCaps="true"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <TextView
+                    android:id="@+id/txtProfileBio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
@@ -203,20 +110,131 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Kesukaan"
+                    android:text="Contact"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:fontFamily="@font/varelaround_regular"
-                    android:text="Lorem impsum dolor sit amet slasd asdlasd asdlasda s"
-                    android:textColor="#383838"
-                    android:textSize="13sp" />
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_email" />
+
+                    <TextView
+                        android:id="@+id/txtProfileEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="syauqiilham28@gmail.com"
+                        android:textColor="#383838"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_phone" />
+
+                    <TextView
+                        android:id="@+id/txtProfilePhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="087750480421"
+                        android:textColor="#383838"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_facebook" />
+
+                    <TextView
+                        android:id="@+id/txtProfileFacebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Syauqi Ilham"
+                        android:textColor="#383838"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_instagram" />
+
+                    <TextView
+                        android:id="@+id/txtProfileInstagram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="cukil69"
+                        android:textColor="#383838"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_twitter" />
+
+                    <TextView
+                        android:id="@+id/txtProfileTwitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="cukil69"
+                        android:textColor="#383838"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
@@ -230,20 +248,73 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Cita-cita"
+                    android:text="Find Me"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:fontFamily="@font/varelaround_regular"
-                    android:text="Lorem impsum dolor sit amet slasd asdlasd asdlasda s"
-                    android:textColor="#383838"
-                    android:textSize="13sp" />
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_location" />
+
+                    <TextView
+                        android:id="@+id/txtProfileAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/varelaround_regular"
+                        android:text="Lorem impsum dolor sit amet slasd asdlasd asdlasda s"
+                        android:textColor="#383838"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <fragment
+                            android:id="@+id/mapProfileMap"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:cameraZoom="16"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintDimensionRatio="w,16:9"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:liteMode="true"
+                            app:mapType="normal" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/imgProfileMap"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:src="@drawable/ic_map" />-->
+
+                </androidx.cardview.widget.CardView>
 
                 <View
                     android:layout_width="match_parent"
@@ -254,9 +325,9 @@
 
             </LinearLayout>
 
+        </LinearLayout>
 
-        </androidx.core.widget.NestedScrollView>
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </ScrollView>
 
 </layout>

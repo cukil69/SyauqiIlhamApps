@@ -1,7 +1,15 @@
 {
   "image": "ic_me",
   "name": "Syauqi Ilham Alfaraci",
+  "bio": "Hello there, my name is Syauqi Ilham Alfaraci, but my friend always call me \"cukil\" for some reason.\n\nAnyway, I'm really good at making people laugh, I edit video so it looks \"funny\" enough if you can call it.\n\nI love like, really LOVE travelling (read: riding with my bike). Especially to the beach, well who doesn't love beach right?\n\nAnd I also pretty good at programming too, somehow lol.\n\nI got 3 years of experience at Android Development, 1 year of experience at C# & WPF Development, and less than 1 year of experience at iOS, and Unreal Engine Development.",
   "email": "syauqiilham28@gmail.com",
+  "phone": "087750480421",
+  "instagram": "@cukil69",
+  "twitter": "@cukil69",
+  "facebook": "Syauqi Ilham",
+  "facebook_url": "Syauqi Ilham",
+  "address": "Jl. Mentor Gg. Hambali 1 No. 96, Gunung Batu, Bandung",
+  "lat_lng": "-6.892492,107.570859",
   "hobbies": [
     {
       "image": "ic_hobi_1",
@@ -21,6 +29,26 @@
     }
   ],
   "portofolio": [
+    {
+      "image": "ic_porto_1",
+      "name": "Gaming"
+    },
+    {
+      "image": "ic_porto_2",
+      "name": "Gaming"
+    }
+  ],
+  "interest": [
+    {
+      "image": "ic_porto_1",
+      "name": "Gaming"
+    },
+    {
+      "image": "ic_porto_2",
+      "name": "Gaming"
+    }
+  ],
+  "cita_cita": [
     {
       "image": "ic_porto_1",
       "name": "Gaming"
