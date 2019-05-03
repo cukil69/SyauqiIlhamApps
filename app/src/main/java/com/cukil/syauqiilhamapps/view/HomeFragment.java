@@ -5,6 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
 import com.cukil.syauqiilhamapps.R;
 import com.cukil.syauqiilhamapps.adapter.ProfileInterestAdapter;
 import com.cukil.syauqiilhamapps.databinding.FragmentHomeBinding;
@@ -14,12 +21,6 @@ import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.Reader;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 /*
     NIM          : 10116900
@@ -31,7 +32,6 @@ import androidx.recyclerview.widget.RecyclerView;
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
-    private ProfileInterestAdapter hobiAdapter;
 
     @Nullable
     @Override
@@ -47,7 +47,10 @@ public class HomeFragment extends Fragment {
 
         Reader jsonReader = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.profile)));
         Profile item = new Gson().fromJson(jsonReader, Profile.class);
-        hobiAdapter = new ProfileInterestAdapter(item.getHobbies());
+        Glide.with(getContext()).load(item.getImage()).into(binding.imgHomeProfile);
+        ProfileInterestAdapter hobiAdapter = new ProfileInterestAdapter(item.getHobbies());
+        ProfileInterestAdapter interestAdapter = new ProfileInterestAdapter(item.getInterest());
+        ProfileInterestAdapter citaAdapter = new ProfileInterestAdapter(item.getCita());
         binding.txtHomeJmlPorto.setText(item.getPorto().size() + "");
         binding.txtHomeJmlHobi.setText(item.getHobbies().size() + "");
         binding.txtHomeName.setText(item.getName());
@@ -55,5 +58,9 @@ public class HomeFragment extends Fragment {
         binding.txtHomeEmail.setText(item.getEmail());
         binding.rclHomeListHobi.setAdapter(hobiAdapter);
         binding.rclHomeListHobi.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+        binding.rclHomeListInterest.setAdapter(interestAdapter);
+        binding.rclHomeListInterest.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+        binding.rclHomeListCita.setAdapter(citaAdapter);
+        binding.rclHomeListCita.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
     }
 }

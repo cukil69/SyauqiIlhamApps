@@ -48,7 +48,7 @@ public class Profile {
     @SerializedName("interest")
     private List<Interest> interest;
 
-    @SerializedName("cita")
+    @SerializedName("cita_cita")
     private List<Interest> cita;
 
     public String getImage() {

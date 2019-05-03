@@ -21,9 +21,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="240dp"
                     android:layout_marginBottom="8dp"
-                    android:scaleType="fitXY"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/ic_profile_header" />
 
                 <de.hdodenhof.circleimageview.CircleImageView
@@ -32,7 +32,6 @@
                     android:layout_height="120dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="32dp"
-                    android:src="@drawable/ic_me"
                     android:tint="@color/colorGrey"
                     app:civ_border_color="#fff"
                     app:civ_border_width="2dp"
@@ -56,6 +55,7 @@
                     android:textStyle="bold" />
 
                 <Button
+                    android:id="@+id/btnProfileAbout"
                     style="@style/Button.Accent"
                     android:layout_width="wrap_content"
                     android:layout_alignParentBottom="true"
@@ -117,8 +117,10 @@
                     android:textStyle="bold" />
 
                 <LinearLayout
+                    android:id="@+id/btnProfileEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="8dp">
@@ -141,8 +143,10 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/btnProfilePhone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="8dp">
@@ -165,8 +169,10 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/btnProfileFacebook"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="8dp">
@@ -189,8 +195,10 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/btnProfileInstagram"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="8dp">
@@ -213,8 +221,10 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/btnProfileTwitter"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="8dp">
