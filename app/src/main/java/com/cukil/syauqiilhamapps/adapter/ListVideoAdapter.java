@@ -1,17 +1,27 @@
 package com.cukil.syauqiilhamapps.adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
+import com.bumptech.glide.Glide;
 import com.cukil.syauqiilhamapps.databinding.ItemVideoBinding;
 import com.cukil.syauqiilhamapps.model.Video;
+import com.cukil.syauqiilhamapps.view.VideoViewerActivity;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+/*
+    NIM          : 10116900
+    Nama         : Syauqi Ilham Alfaraci
+    Kelas        : IF-14K
+    Tanggal buat : 01-05-2019
+ */
 
 public class ListVideoAdapter extends RecyclerView.Adapter<ListVideoAdapter.ProfileInterestViewHolder> {
 
@@ -46,13 +56,23 @@ public class ListVideoAdapter extends RecyclerView.Adapter<ListVideoAdapter.Prof
             this.binding = binding;
         }
 
-        public void bind(Video item) {
+        public void bind(final Video item) {
             if (item != null) {
-                int imgResId = binding.getRoot().getResources().getIdentifier(item.getImage(), "drawable", binding.getRoot().getContext().getPackageName());
-                binding.imgVideoAlbum.setImageResource(imgResId);
+                Glide.with(binding.imgVideoAlbum).load(item.getImage()).into(binding.imgVideoAlbum);
                 binding.txtVideoName.setText(item.getTitle());
                 binding.txtVideoArtist.setText(item.getArtist());
-                binding.imgVideoPlaying.setVisibility(item.isPlaying() ? View.VISIBLE : View.GONE);
+                binding.txtVideoDuration.setText(item.getDuration());
+                binding.cntVideoContainer.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent i = new Intent(view.getContext(), VideoViewerActivity.class);
+                        i.putExtra("image", item.getImage());
+                        i.putExtra("title", item.getTitle());
+                        i.putExtra("artist", item.getArtist());
+                        i.putExtra("url", item.getUrl());
+                        view.getContext().startActivity(i);
+                    }
+                });
             }
         }
     }

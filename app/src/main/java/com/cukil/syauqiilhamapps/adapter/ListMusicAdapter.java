@@ -1,19 +1,27 @@
 package com.cukil.syauqiilhamapps.adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.cukil.syauqiilhamapps.databinding.ItemFriendBinding;
+import com.bumptech.glide.Glide;
 import com.cukil.syauqiilhamapps.databinding.ItemMusicBinding;
-import com.cukil.syauqiilhamapps.model.Friend;
 import com.cukil.syauqiilhamapps.model.Music;
+import com.cukil.syauqiilhamapps.view.MusicViewerActivity;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+/*
+    NIM          : 10116900
+    Nama         : Syauqi Ilham Alfaraci
+    Kelas        : IF-14K
+    Tanggal buat : 01-05-2019
+ */
 
 public class ListMusicAdapter extends RecyclerView.Adapter<ListMusicAdapter.ProfileInterestViewHolder> {
 
@@ -48,13 +56,23 @@ public class ListMusicAdapter extends RecyclerView.Adapter<ListMusicAdapter.Prof
             this.binding = binding;
         }
 
-        public void bind(Music item) {
+        public void bind(final Music item) {
             if (item != null) {
-                int imgResId = binding.getRoot().getResources().getIdentifier(item.getImage(), "drawable", binding.getRoot().getContext().getPackageName());
-                binding.imgMusicAlbum.setImageResource(imgResId);
+                Glide.with(binding.imgMusicAlbum).load(item.getImage()).into(binding.imgMusicAlbum);
                 binding.txtMusicName.setText(item.getTitle());
                 binding.txtMusicAlbum.setText(item.getArtist());
-                binding.imgMusicPlaying.setVisibility(item.isPlaying() ? View.VISIBLE : View.GONE);
+                binding.txtMusicDuration.setText(item.getDuration());
+                binding.cntMusicContainer.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent i = new Intent(view.getContext(), MusicViewerActivity.class);
+                        i.putExtra("image", item.getImage());
+                        i.putExtra("title", item.getTitle());
+                        i.putExtra("artist", item.getArtist());
+                        i.putExtra("url", item.getUrl());
+                        view.getContext().startActivity(i);
+                    }
+                });
             }
         }
     }

@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         binding.navMainNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
-    private void changeFragment(int itemId) {
+    public void changeFragment(int itemId) {
         Fragment fragment;
         switch (itemId) {
             case R.id.navigation_home:
@@ -67,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         getSupportFragmentManager().beginTransaction().replace(R.id.frmMainFrame, fragment).commit();
+    }
+
+    public void changeBottomNav(int itemId) {
+        binding.navMainNavigation.setSelectedItemId(itemId);
     }
 
 }

@@ -5,12 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.cukil.syauqiilhamapps.R;
 import com.cukil.syauqiilhamapps.adapter.ProfileInterestAdapter;
@@ -21,6 +15,12 @@ import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.Reader;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 /*
     NIM          : 10116900
@@ -49,6 +49,7 @@ public class HomeFragment extends Fragment {
         Profile item = new Gson().fromJson(jsonReader, Profile.class);
         Glide.with(getContext()).load(item.getImage()).into(binding.imgHomeProfile);
         ProfileInterestAdapter hobiAdapter = new ProfileInterestAdapter(item.getHobbies());
+        ProfileInterestAdapter portoAdapter = new ProfileInterestAdapter(item.getPorto());
         ProfileInterestAdapter interestAdapter = new ProfileInterestAdapter(item.getInterest());
         ProfileInterestAdapter citaAdapter = new ProfileInterestAdapter(item.getCita());
         binding.txtHomeJmlPorto.setText(item.getPorto().size() + "");
@@ -58,9 +59,18 @@ public class HomeFragment extends Fragment {
         binding.txtHomeEmail.setText(item.getEmail());
         binding.rclHomeListHobi.setAdapter(hobiAdapter);
         binding.rclHomeListHobi.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+        binding.rclHomeListPorto.setAdapter(portoAdapter);
+        binding.rclHomeListPorto.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
         binding.rclHomeListInterest.setAdapter(interestAdapter);
         binding.rclHomeListInterest.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
         binding.rclHomeListCita.setAdapter(citaAdapter);
         binding.rclHomeListCita.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+        binding.btnHomeProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity) getActivity()).changeBottomNav(R.id.navigation_profile);
+            }
+        });
     }
+
 }

@@ -10,5 +10,19 @@
     <string name="title_video">Video</string>
     <string name="title_profile">Profile</string>
     <string name="title_activity_maps">Map</string>
+    <string name="action_get_started">Get started</string>
+    <string name="text_about">Aplikasi ini dibuat untuk tugas UTS mata kuliah Aplikasi Komputasi Bergerak di Universitas Komputer Indonesia Semester 6</string>
+    <string name="action_close">CLOSE</string>
+    <string name="text_version">Ver 1.0</string>
+    <string name="text_portofolio">Portofolio</string>
+    <string name="text_hobi">Hobi</string>
+    <string name="text_bio">Bio</string>
+    <string name="action_lihat_profil_penuh">Lihat profil penuh</string>
+    <string name="text_interest">Kesukaan</string>
+    <string name="text_cita_cita">Cita-cita</string>
+    <string name="action_about_app">About app</string>
+    <string name="text_contact">Contact</string>
+    <string name="text_find_me">Find Me</string>
+    <string name="text_buffering">Buffering</string>
 
 </resources>

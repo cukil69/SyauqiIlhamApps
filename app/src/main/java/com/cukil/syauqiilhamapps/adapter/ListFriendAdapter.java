@@ -16,6 +16,13 @@ import com.cukil.syauqiilhamapps.model.Friend;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+    NIM          : 10116900
+    Nama         : Syauqi Ilham Alfaraci
+    Kelas        : IF-14K
+    Tanggal buat : 01-05-2019
+ */
+
 public class ListFriendAdapter extends RecyclerView.Adapter<ListFriendAdapter.ProfileInterestViewHolder> {
 
     private List<Friend> items = new ArrayList<>();

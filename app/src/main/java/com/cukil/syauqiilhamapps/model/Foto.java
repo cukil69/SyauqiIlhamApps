@@ -2,9 +2,13 @@ package com.cukil.syauqiilhamapps.model;
 
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by Syauqi Ilham on 5/2/2019.
+/*
+    NIM          : 10116900
+    Nama         : Syauqi Ilham Alfaraci
+    Kelas        : IF-14K
+    Tanggal buat : 01-05-2019
  */
+
 public class Foto {
 
     @SerializedName("image")

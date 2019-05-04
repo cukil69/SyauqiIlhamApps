@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -29,12 +30,12 @@
             android:layout_marginTop="24dp"
             android:layout_marginRight="32dp"
             android:fontFamily="@font/varelaround_regular"
-            android:text="Hello!"
             android:textSize="32sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgTutorialImage" />
+            app:layout_constraintTop_toBottomOf="@+id/imgTutorialImage"
+            tools:text="Hello!" />
 
         <TextView
             android:id="@+id/txtTutorialDesc"
@@ -45,11 +46,11 @@
             android:layout_marginRight="32dp"
             android:fontFamily="@font/varelaround_regular"
             android:gravity="center"
-            android:text="Nama saya Syauqi Ilham Alfaraci.\nSelamat datang di aplikasi saya"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtTutorialTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/txtTutorialTitle"
+            tools:text="Nama saya Syauqi Ilham Alfaraci.\nSelamat datang di aplikasi saya" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

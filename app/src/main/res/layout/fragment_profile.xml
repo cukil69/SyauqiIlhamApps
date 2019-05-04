@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data></data>
 
@@ -35,11 +36,7 @@
                     android:tint="@color/colorGrey"
                     app:civ_border_color="#fff"
                     app:civ_border_width="2dp"
-                    app:civ_circle_background_color="@color/colorGrey"
-                    app:finalHeight="32dp"
-                    app:finalToolbarHeight="?attr/actionBarSize"
-                    app:finalXPosition="8dp"
-                    app:finalYPosition="12dp" />
+                    app:civ_circle_background_color="@color/colorGrey" />
 
                 <TextView
                     android:id="@+id/txtProfileName"
@@ -49,10 +46,10 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Syauqi Ilham Alfaraci"
                     android:textColor="#fff"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:text="Syauqi Ilham Alfaraci" />
 
                 <Button
                     android:id="@+id/btnProfileAbout"
@@ -60,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:text="About app" />
+                    android:text="@string/action_about_app" />
 
             </RelativeLayout>
 
@@ -82,7 +79,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Bio"
+                    android:text="@string/text_bio"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"
@@ -94,9 +91,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Lorem impsum dolor sit amet slasd asdlasd asdlasda s"
                     android:textColor="#383838"
-                    android:textSize="13sp" />
+                    android:textSize="13sp"
+                    tools:text="Lorem impsum dolor sit amet slasd asdlasd asdlasda s" />
 
                 <View
                     android:layout_width="match_parent"
@@ -110,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Contact"
+                    android:text="@string/text_contact"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"
@@ -136,9 +133,10 @@
                         android:id="@+id/txtProfileEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="syauqiilham28@gmail.com"
+                        android:fontFamily="@font/varelaround_regular"
                         android:textColor="#383838"
-                        android:textSize="13sp" />
+                        android:textSize="13sp"
+                        tools:text="syauqiilham28@gmail.com" />
 
                 </LinearLayout>
 
@@ -162,9 +160,10 @@
                         android:id="@+id/txtProfilePhone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="087750480421"
+                        android:fontFamily="@font/varelaround_regular"
                         android:textColor="#383838"
-                        android:textSize="13sp" />
+                        android:textSize="13sp"
+                        tools:text="087750480421" />
 
                 </LinearLayout>
 
@@ -188,9 +187,10 @@
                         android:id="@+id/txtProfileFacebook"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Syauqi Ilham"
+                        android:fontFamily="@font/varelaround_regular"
                         android:textColor="#383838"
-                        android:textSize="13sp" />
+                        android:textSize="13sp"
+                        tools:text="Syauqi Ilham" />
 
                 </LinearLayout>
 
@@ -214,9 +214,10 @@
                         android:id="@+id/txtProfileInstagram"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="cukil69"
+                        android:fontFamily="@font/varelaround_regular"
                         android:textColor="#383838"
-                        android:textSize="13sp" />
+                        android:textSize="13sp"
+                        tools:text="cukil69" />
 
                 </LinearLayout>
 
@@ -240,9 +241,10 @@
                         android:id="@+id/txtProfileTwitter"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="cukil69"
+                        android:fontFamily="@font/varelaround_regular"
                         android:textColor="#383838"
-                        android:textSize="13sp" />
+                        android:textSize="13sp"
+                        tools:text="cukil69" />
 
                 </LinearLayout>
 
@@ -258,7 +260,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Find Me"
+                    android:text="@string/text_find_me"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"
@@ -284,9 +286,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/varelaround_regular"
-                        android:text="Lorem impsum dolor sit amet slasd asdlasd asdlasda s"
                         android:textColor="#383838"
-                        android:textSize="13sp" />
+                        android:textSize="13sp"
+                        tools:text="Lorem impsum dolor sit amet slasd asdlasd asdlasda s" />
 
                 </LinearLayout>
 

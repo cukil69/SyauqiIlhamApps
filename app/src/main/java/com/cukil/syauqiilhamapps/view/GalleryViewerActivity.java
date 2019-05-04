@@ -10,6 +10,13 @@ import com.bumptech.glide.Glide;
 import com.cukil.syauqiilhamapps.R;
 import com.cukil.syauqiilhamapps.databinding.ActivityGalleryViewerBinding;
 
+/*
+    NIM          : 10116900
+    Nama         : Syauqi Ilham Alfaraci
+    Kelas        : IF-14K
+    Tanggal buat : 01-05-2019
+ */
+
 public class GalleryViewerActivity extends AppCompatActivity {
 
     private ActivityGalleryViewerBinding binding;

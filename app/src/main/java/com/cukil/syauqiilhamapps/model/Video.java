@@ -2,9 +2,13 @@ package com.cukil.syauqiilhamapps.model;
 
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by Syauqi Ilham on 5/2/2019.
+/*
+    NIM          : 10116900
+    Nama         : Syauqi Ilham Alfaraci
+    Kelas        : IF-14K
+    Tanggal buat : 01-05-2019
  */
+
 public class Video {
 
     @SerializedName("image")
@@ -16,7 +20,11 @@ public class Video {
     @SerializedName("artist")
     private String artist;
 
-    private boolean isPlaying = false;
+    @SerializedName("duration")
+    private String duration;
+
+    @SerializedName("url")
+    private String url;
 
     public String getImage() {
         return image;
@@ -30,7 +38,11 @@ public class Video {
         return artist;
     }
 
-    public boolean isPlaying() {
-        return isPlaying;
+    public String getDuration() {
+        return duration;
+    }
+
+    public String getUrl() {
+        return url;
     }
 }

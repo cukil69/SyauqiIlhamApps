@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data></data>
 
@@ -36,12 +37,12 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:fontFamily="@font/varelaround_regular"
-                android:text="Syauqi Ilham"
                 android:textColor="#383838"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="@+id/imgFriendFoto"
                 app:layout_constraintStart_toStartOf="@+id/imgFriendFoto"
-                app:layout_constraintTop_toBottomOf="@+id/imgFriendFoto" />
+                app:layout_constraintTop_toBottomOf="@+id/imgFriendFoto"
+                tools:text="Syauqi Ilham" />
 
             <ImageView
                 android:id="@+id/imageView"
@@ -61,11 +62,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:fontFamily="@font/varelaround_regular"
-                android:text="08xxxxxx"
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="@+id/imageView" />
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                tools:text="08xxxxxx" />
 
 
             <ImageView
@@ -85,11 +86,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:fontFamily="@font/varelaround_regular"
-                android:text="Bandung"
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView2"
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
-                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                tools:text="Bandung" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -12,6 +12,13 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+/*
+    NIM          : 10116900
+    Nama         : Syauqi Ilham Alfaraci
+    Kelas        : IF-14K
+    Tanggal buat : 01-05-2019
+ */
+
 public class ProfileInterestAdapter extends RecyclerView.Adapter<ProfileInterestAdapter.ProfileInterestViewHolder> {
 
     private List<Interest> items = new ArrayList<>();

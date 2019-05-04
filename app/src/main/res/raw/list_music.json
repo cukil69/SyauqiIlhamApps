@@ -1,22 +1,30 @@
 [
   {
-    "image": "ic_queen",
+    "image": "https://imgs.smoothradio.com/images/26964?crop=16_9&width=660&relax=1&signature=NVCgtyi1KSEvzRoufqfsYlI01LY=",
     "title": "Bohemian Rhapsody",
-    "artist": "Queen"
+    "artist": "Queen",
+    "duration": "06:07",
+    "url": "http://dl.lagu123.link/download/5d3442c7fa4561c8417a130370e28dc3/1b9bd42631a5545cf0e91934b5cb1e07.mp3?name=Queen%20-%20Bohemian%20Rhapsody&opwvc=1"
   },
   {
-    "image": "ic_queen",
+    "image": "https://imgs.smoothradio.com/images/26964?crop=16_9&width=660&relax=1&signature=NVCgtyi1KSEvzRoufqfsYlI01LY=",
     "title": "Killer Queen",
-    "artist": "Queen"
+    "artist": "Queen",
+    "duration": "03:12",
+    "url": "http://dl.lagu123.link/download/cef8ff3227c3fceda955fa9d4b2a409a/3c8d2b832c04f7ffb549c3c9ff30bfc5.mp3?name=Queen%20-%20Killer%20Queen&opwvc=1"
   },
   {
-    "image": "ic_a7x",
+    "image": "https://townsquare.media/site/366/files/2016/10/avenged_sevenfold_classic_by_mckee91.jpg",
     "title": "Second Heartbeat",
-    "artist": "Avenged Sevenfold"
+    "artist": "Avenged Sevenfold",
+    "duration": "07:01",
+    "url": "http://dl.lagu123.link/download/e5f743f07a1559ff4144aa87c33c40fb/25087d6f295e4d39bc3668e181bca68b.mp3?name=Avenged%20Sevenfold%20-%20Second%20Heartbeat1080p&opwvc=1"
   },
   {
-    "image": "ic_a7x",
+    "image": "https://townsquare.media/site/366/files/2016/10/avenged_sevenfold_classic_by_mckee91.jpg",
     "title": "Carry On",
-    "artist": "Avenged Sevenfold"
+    "artist": "Avenged Sevenfold",
+    "duration": "05:44",
+    "url": "http://dl.lagu123.link/download/d0909ca688c82081e435a7abc3c8b5b1/557f8e83afa08d3531279c248c692b54.mp3?name=Avenged%20Sevenfold%20-%20Carry%20On"
   }
 ]

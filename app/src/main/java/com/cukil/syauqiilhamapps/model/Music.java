@@ -16,7 +16,11 @@ public class Music {
     @SerializedName("artist")
     private String artist;
 
-    private boolean isPlaying = false;
+    @SerializedName("duration")
+    private String duration;
+
+    @SerializedName("url")
+    private String url;
 
     public String getImage() {
         return image;
@@ -30,7 +34,11 @@ public class Music {
         return artist;
     }
 
-    public boolean isPlaying() {
-        return isPlaying;
+    public String getDuration() {
+        return duration;
+    }
+
+    public String getUrl() {
+        return url;
     }
 }

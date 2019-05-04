@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data></data>
 
@@ -35,11 +36,7 @@
                     android:tint="@color/colorGrey"
                     app:civ_border_color="#fff"
                     app:civ_border_width="2dp"
-                    app:civ_circle_background_color="@color/colorGrey"
-                    app:finalHeight="32dp"
-                    app:finalToolbarHeight="?attr/actionBarSize"
-                    app:finalXPosition="8dp"
-                    app:finalYPosition="12dp" />
+                    app:civ_circle_background_color="@color/colorGrey"/>
 
                 <TextView
                     android:id="@+id/txtHomeName"
@@ -49,10 +46,10 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Syauqi Ilham"
                     android:textColor="#fff"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:text="Syauqi Ilham" />
 
                 <TextView
                     android:id="@+id/txtHomeEmail"
@@ -61,9 +58,9 @@
                     android:layout_below="@id/txtHomeName"
                     android:layout_centerHorizontal="true"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="syauqiilham28@gmail.com"
                     android:textColor="#fff"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:text="syauqiilham28@gmail.com" />
 
                 <LinearLayout
                     android:id="@+id/lnrHomeJmlPorto"
@@ -88,16 +85,16 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="-4dp"
                         android:fontFamily="@font/varelaround_regular"
-                        android:text="3"
                         android:textColor="#383838"
                         android:textSize="22sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:text="3" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/varelaround_regular"
-                        android:text="Portofolio"
+                        android:text="@string/text_portofolio"
                         android:textColor="#383838"
                         android:textSize="13sp" />
 
@@ -127,16 +124,16 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="-4dp"
                         android:fontFamily="@font/varelaround_regular"
-                        android:text="3"
                         android:textColor="#383838"
                         android:textSize="22sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:text="3" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/varelaround_regular"
-                        android:text="Hobi"
+                        android:text="@string/text_hobi"
                         android:textColor="#383838"
                         android:textSize="13sp" />
 
@@ -162,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Bio"
+                    android:text="@string/text_bio"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"
@@ -176,16 +173,17 @@
                     android:ellipsize="end"
                     android:fontFamily="@font/varelaround_regular"
                     android:maxLines="3"
-                    android:text="Lorem impsum dolor sit amet slasd asdlasd asdlasda s"
                     android:textColor="#383838"
-                    android:textSize="13sp" />
+                    android:textSize="13sp"
+                    tools:text="Lorem impsum dolor sit amet slasd asdlasd asdlasda s" />
 
                 <Button
+                    android:id="@+id/btnHomeProfile"
                     style="@style/Button.Accent"
                     android:layout_width="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginBottom="16dp"
-                    android:text="Lihat profil penuh" />
+                    android:text="@string/action_lihat_profil_penuh" />
 
                 <View
                     android:layout_width="match_parent"
@@ -199,7 +197,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Hobi"
+                    android:text="@string/text_hobi"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"
@@ -223,20 +221,17 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Portofolio"
+                    android:text="@string/text_portofolio"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rclHomeListPorto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:fontFamily="@font/varelaround_regular"
-                    android:text="Lorem impsum dolor sit amet slasd asdlasd asdlasda s"
-                    android:textColor="#383838"
-                    android:textSize="13sp" />
+                    android:layout_marginBottom="16dp" />
 
                 <View
                     android:layout_width="match_parent"
@@ -250,7 +245,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Kesukaan"
+                    android:text="@string/text_interest"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"
@@ -274,7 +269,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:fontFamily="@font/varelaround_regular"
-                    android:text="Cita-cita"
+                    android:text="@string/text_cita_cita"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"

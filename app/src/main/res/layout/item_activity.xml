@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data></data>
 
@@ -21,10 +22,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/varelaround_regular"
-                android:text="12:45"
                 android:textColor="@color/colorPrimary"
                 android:textSize="13sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="12:45" />
 
             <TextView
                 android:id="@+id/txtActivityDesc"
@@ -34,9 +35,9 @@
                 android:ellipsize="end"
                 android:fontFamily="@font/varelaround_regular"
                 android:maxLines="2"
-                android:text="kamarnya enak\ntempatnya juga enak mantap"
                 android:textColor="#383838"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:text="Bangun" />
 
             <TextView
                 android:id="@+id/txtActivityLoc"
@@ -44,8 +45,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:fontFamily="@font/varelaround_regular"
-                android:text="Cafe"
-                android:textSize="13sp" />
+                android:textSize="13sp"
+                tools:text="Rumah" />
 
         </LinearLayout>
 

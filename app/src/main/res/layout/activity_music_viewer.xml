@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ToolbarPrimary"
+                app:title="@string/title_music" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgMusicAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_queen"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="4dp" />
+
+            <ProgressBar
+                android:id="@+id/prgMusicLoading"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_music_loading"
+                android:padding="96dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/imgMusicAlbum"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintLeft_toLeftOf="@id/imgMusicAlbum"
+                app:layout_constraintRight_toRightOf="@id/imgMusicAlbum"
+                app:layout_constraintTop_toTopOf="@id/imgMusicAlbum" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtMusicLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/varelaround_regular"
+            android:gravity="center"
+            android:text="@string/text_buffering"
+            android:textColor="#383838"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtMusicName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/varelaround_regular"
+            android:gravity="center"
+            android:textColor="#383838"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:text="Syauqi Ilham" />
+
+        <TextView
+            android:id="@+id/txtMusicArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/varelaround_regular"
+            android:gravity="center"
+            android:textSize="16sp"
+            tools:text="08xxxxxx" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnMusicPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_play"
+            app:useCompatPadding="true" />
+
+    </LinearLayout>
+
+</layout>

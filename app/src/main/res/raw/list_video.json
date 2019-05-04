@@ -1,22 +1,30 @@
 [
   {
-    "image": "ic_queen",
+    "image": "http://i3.ytimg.com/vi/TcMBFSGVi1c/maxresdefault.jpg",
     "title": "Avengers Endgame Official Trailer",
-    "artist": "Marvel"
+    "artist": "Marvel",
+    "duration": "02:27",
+    "url": "https://movietrailers.apple.com/movies/marvel/avengers-endgame/avengers-endgame-trailer-1_h480p.mov"
   },
   {
-    "image": "ic_queen",
+    "image": "http://i3.ytimg.com/vi/6ZfuNTqbHE8/maxresdefault.jpg",
     "title": "Avengers Infinity War Official Trailer",
-    "artist": "Marvel"
+    "artist": "Marvel",
+    "duration": "02:25",
+    "url": "http://movietrailers.apple.com/movies/marvel/avengers-infinity-war/avengers-infinity-war-trailer-1_h480p.mov"
   },
   {
-    "image": "ic_queen",
+    "image": "http://i3.ytimg.com/vi/tmeOjFno6Do/maxresdefault.jpg",
     "title": "Avengers Age of Ultron Official Trailer",
-    "artist": "Marvel"
+    "artist": "Marvel",
+    "duration": "02:17",
+    "url": "http://movietrailers.apple.com/movies/marvel/avengersageofultron/avengersageofultron-tlr1_h480p.mov"
   },
   {
-    "image": "ic_queen",
+    "image": "http://i3.ytimg.com/vi/eOrNdBpGMv8/maxresdefault.jpg",
     "title": "Avengers Official Trailer",
-    "artist": "Marvel"
+    "artist": "Marvel",
+    "duration": "02:05",
+    "url": "http://trailers.apple.com/movies/marvel/theavengers/avengers-tlr1_h480p.mov"
   }
 ]

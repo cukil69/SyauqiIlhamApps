@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.cukil.syauqiilhamapps.R;
-import com.cukil.syauqiilhamapps.util.PreferenceHelper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,6 +30,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                 finish();
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
-        }, PreferenceHelper.getBoolean(this, PreferenceHelper.KEY_FIRST_TIME, true) ? 1500 : 800);
+        }, 1000);
     }
 }

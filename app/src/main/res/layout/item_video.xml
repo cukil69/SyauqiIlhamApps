@@ -14,6 +14,7 @@
         app:cardUseCompatPadding="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cntVideoContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
@@ -31,17 +32,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/imgVideoPlaying"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="@+id/imgVideoAlbum"
-                app:layout_constraintEnd_toEndOf="@+id/imgVideoAlbum"
-                app:layout_constraintStart_toStartOf="@+id/imgVideoAlbum"
-                app:layout_constraintTop_toTopOf="@+id/imgVideoAlbum"
-                app:srcCompat="@drawable/ic_music_play" />
-
             <TextView
                 android:id="@+id/txtVideoName"
                 android:layout_width="0dp"
@@ -51,13 +41,13 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:fontFamily="@font/varelaround_regular"
-                android:text="Syauqi Ilham"
                 android:textColor="#383838"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/imgVideoAlbum"
                 app:layout_constraintStart_toStartOf="@+id/imgVideoAlbum"
-                app:layout_constraintTop_toBottomOf="@+id/imgVideoAlbum" />
+                app:layout_constraintTop_toBottomOf="@+id/imgVideoAlbum"
+                tools:text="Syauqi Ilham" />
 
             <TextView
                 android:id="@+id/txtVideoArtist"
@@ -65,12 +55,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:fontFamily="@font/varelaround_regular"
-                android:text="08xxxxxx"
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/txtVideoName"
                 app:layout_constraintStart_toStartOf="@+id/txtVideoName"
-                app:layout_constraintTop_toBottomOf="@id/txtVideoName" />
+                app:layout_constraintTop_toBottomOf="@id/txtVideoName"
+                tools:text="08xxxxxx" />
 
             <TextView
                 android:id="@+id/txtVideoDuration"
@@ -83,11 +73,11 @@
                 android:paddingTop="4dp"
                 android:paddingRight="8dp"
                 android:paddingBottom="4dp"
-                android:text="03:10"
                 android:textColor="#fff"
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imgVideoAlbum"
-                app:layout_constraintEnd_toEndOf="@+id/imgVideoAlbum" />
+                app:layout_constraintEnd_toEndOf="@+id/imgVideoAlbum"
+                tools:text="03:10" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
